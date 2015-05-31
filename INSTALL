@@ -1,0 +1,89 @@
+Hawkmatix Projects - INSTALL
+
+Copyright 2012, 2013 Andrew Hawkins.
+
+Everyone is permitted to copy and distribute verbatim copies
+of this file, but changing it is not allowed.
+
+============================================================
+
+Note: It is important to remember that this program was written as a library
+for NinjaTrader and uses the NinjaTrader API, commonly referred to as NinjaScript.
+This program, in its current form, cannot run independently from NinjaTrader.
+
+Installation from Binary
+========================
+
+Note: Not all projects have binanry files available. If the source packeage does not
+include a bin subfile then you will have to use the "Compiling from Source" either
+method 1 or 2 to install the project.
+
+1. Open NinjaTrader.
+
+2. In the Control Center click File, Utilities, then Import NinjaScript...
+
+3. A window will pop up asking you if the file is from a trusted source. Click Yes.
+
+4. Locate and select the binary file then click Open. This file will likely be in your
+Downloads. It also must be unzipped. I will be in the subfolder bin and named ...Revise
+
+
+Compiling from Source, Method 1
+===============================
+
+1. Locate the source file for the project. It is likely to be in your Downloads.
+You must unzip the containing file. It will be in the subfolder src and named HawkmatixPROJECT.cs
+with PROJECT being the name of the project (ex. IntradayPivots, Distribution, etc.).
+
+2. Select the file and copy it, either by right clicking or Ctrl+C.
+
+3. Locate the NinjaTrader indicator folder in your Documents. This varies from machine
+to machine but it is likely to be along the path Documents/NinjaTrader 7/bin/Custom/Indicator.
+
+4. Paste the previously copied file into this folder.
+
+5. Now that this file is in the correct place you must recompile all indicators so that
+NinjaTrader can rewrite the DLL file. Do this by Opening NinjaTrader.
+
+6. In the Control Center click Tools, Edit NinjaScript, then Indicator...
+
+7. Select any indicator from the list then click OK.
+
+8. Finally, press the compile button in the top tool bar.
+
+9. Now the project will be available for use.
+
+Compiling from Source, Method 2
+===============================
+
+Note: Method 1 is the preferred method. If you are having trouble using method 1 then
+feel free to use this method. It is slightly more complicated and should take more time.
+
+1. Open NinjaTrader.
+
+2. In the Control Center click Tools, New NinjaScript, then Indicator...
+
+3. When the new frame pops up click Next>.
+
+4. On the next screen it will ask to enter a name. It is important that you
+input the name exactly the same as the file. So if the file is HawkmatixIntradayPivots.cs
+you must enter HawkmatixIntradayPivots as the name.
+
+5. After the name has been entered click Generate. A script file will open with a
+default template.
+
+6. Locate and open the source file for the project. It is likely to be in your
+Downloads. You must unzip the containing file. It will be in the subfolder src and named
+HawkmatixPROJECT.cs with PROJECT being the name of the project (ex. IntradayPivots,
+Distribution, etc.).
+
+7. Once you have opened the source file select all and copy the contents of the file.
+You can do this with Ctrl+A then Ctrl+C.
+
+8. Return to default template script and select all and delete the contents of the file.
+You can do this with Ctrl+A then Del.
+
+9. Finally, paste the contents into the script and press the compile button in the
+top tool bar.
+
+10. You can now close the file and the project will be available for use.
