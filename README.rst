@@ -8,14 +8,25 @@ and plotted. This yields a close fit to the data with very high correlation.
 Extrapolations can be drawn from the polynomial that supports future price
 predictions. A visual aid was built into this project allowing a color change
 when either the value is increasing or decreasing or the line acts as support
-or resistance. 
+or resistance.
 
 Installation
 ------------
 
-Install from source::
+Install from source, method 1 (Requires Python):
 
-    
+    1. ``> python setup.py``
+    2. Follow the directions after the script completes.
+
+Install from source, method 2:
+
+    1. Unzip the downloaded file ``regression-master.zip``.
+    2. Locate the source file ``HawkmatixRegression.cs``.
+    3. Move the source file to the NinjaTrader indicator folder ``Documents/
+       NinjaTrader 7/bin/Custom/Indicator``.
+    4. Open any indicator in NinjaTrader by going to Tools > Edit NinjaScript
+       > Indicator...
+    5. Press the ``compile`` button in the menu bar.
 
 Package Contents
 ----------------
@@ -28,7 +39,7 @@ Usage
 
 This software is intended for use with the NinjaTrader trading platform.
 Full documentation is available at
-http://Hawkmatix.github.io/regression.html
+http://hawkmatix.github.io/regression.html
 
 Supported Operating Environment
 -------------------------------
@@ -55,7 +66,7 @@ Supports NinjaTrader 6.5.1000.19 - 7.0.1000.27.
 License
 -------
 
-All code contained in this repository is Copyright 2012-Present Andrew C.
+All code contained in this repository is Copyright 2012 - Present Andrew C.
 Hawkins.
 
 This code is released under the GNU Lesser General Public License. Please see
@@ -70,7 +81,7 @@ Changelog
 ---------
 
 * v2 Visual aids are added in the form of changing colors. They can be applied
-when the value is increasing or decreasing or acts as support or resistance.
+  when the value is increasing or decreasing or acts as support or resistance.
 
 * v1 Standard calculations for cubic polynomial interpolation are added and the
-value of the polynomial found is plotted at the endpoint, or current time.
+  value of the polynomial found is plotted at the endpoint, or current time.
